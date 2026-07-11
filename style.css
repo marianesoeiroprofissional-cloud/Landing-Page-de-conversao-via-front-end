@@ -586,7 +586,7 @@
             box-shadow: 0 12px 25px rgba(37, 211, 102, 0.25);
         }
 
-        /* Rodapé */
+      /*Estlização do rodapé*/
 
         .footer-logo {
             font-family: 'Playfair Display', serif;
@@ -653,94 +653,118 @@
             transform: scale(1.1);
         }
 
-        .copyright {
-            font-size: 0.8rem;
-            color: var(--texto-escuro);
-            letter-spacing: 0.5px;
-        }
-/*Estlização do rodapé*/
-    
-    .footer {
-    background-color: #f697d2;
+    footer {
+    background-color: #f5a6d3; /* A cor rosa suave da sua identidade visual original */
     width: 100%;
-    margin-top: 120px;
-    padding-top: 40px;
+    margin-top: 80px;
+    padding-top: 50px;
     padding-bottom: 30px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-/* Centraliza o conteúdo das colunas respeitando as margens do seu cabeçalho */
+/* Alinhamento em 3 colunas organizadas */
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1.2fr; /* Ajusta a proporção das colunas */
+    grid-template-columns: 1.5fr 1fr 1.2fr;
     gap: 40px;
     align-items: start;
-    padding-bottom: 20px; /* Reduz o espaço inferior para aproximar do divisor */
-}
-
-.footer-block.contato-pagamento {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Garante que os títulos alinhem à esquerda */
-}
-.footer-block h4{
-    color: rgb(221, 31, 228);
-    font-size: 18px;
-}
-/* Centralização automática na parte inferior do Copyright */
-.text-center {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    padding-bottom: 20px;
 }
 
-/* Formas de Pagamento */
+/* Estilo dos Blocos do Footer */
+.footer-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-block h4 {
+    color: #cc298f; /* Rosa mais escuro de contraste para os títulos */
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+/* Remove os marcadores de bolinha da lista de Informações */
+.footer-block.links-legais ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-block.links-legais li {
+    margin-bottom: 10px;
+}
+
+.footer-block.links-legais a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-block.links-legais a:hover {
+    text-decoration: underline;
+}
+
+/* Itens de Contato */
+.contato-item {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    color: #333333;
+}
+
+/* Seção de Formas de Pagamento */
 .titulo-pagamento {
-    margin-top: 25px; 
+    color: #cc298f !important;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
     margin-bottom: 12px;
 }
 
-/* Container dos Emblemas/Badges de Pagamento */
 .formas-pagamento {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap; /* Impede que quebre o layout em telas um pouco menores */
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .badge-pagamento {
-    background-color: #1a1a1a; 
+    background-color: #1a1a1a;
     color: #ffffff;
     padding: 6px 14px;
     border-radius: 4px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: bold;
     text-transform: uppercase;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
+
+/* Divisor e Copyright Inferior */
+.text-center {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .footer-divider {
-    height: 2px;
-    background-color: #d977a4; 
-    width: 80px; 
-    margin: 15px auto 20px auto; 
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1); /* Uma linha sutil para separar o CNPJ */
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
-/* Área inferior do CNPJ e Copyright */
+
 .footer-cnpj-box {
-    margin-top: 15px;
-    font-size: 0.85rem;
-    line-height: 1.5;
+    font-size: 0.8rem;
+    color: #555555;
+    line-height: 1.6;
 }
 
-.cnpj-info {
-    font-size: 12px;
-    color: #595959;
-    margin: 0;
-}
-
-.copyright {
-    margin: 0;
+.cnpj-info, .copyright {
+    margin: 3px 0;
 }
 
 
